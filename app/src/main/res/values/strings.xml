@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FamCare</string>
+
+    //LoginPage
+    <string name="login_title">Login</string>
+    <string name="hint_enter">Registered Email</string>
+    <string name="password">Password</string>
+    <string name="hint_pass">Enter Password</string>Login_button
+    <string name="Login_button">LOGIN</string>
+    <string name="new_account">Create Account !</string>
+    //Login Validator
+    <string name="invalid_email">Please enter a valid email address.</string>
+    <string name="empty_password">Password cannot be empty.</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">E-mail</string>
+    <string name="create_acct">Create Account</string>
+    <string name="create_pass">Create Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="back_to_login">Back to Login</string>
+
+
+</resources>

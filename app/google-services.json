@@ -1,0 +1,29 @@
+  {
+  "project_info": {
+    "project_number": "616029637587",
+    "project_id": "famcare-d5c9b",
+    "storage_bucket": "famcare-d5c9b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616029637587:android:f01711bcbadd2fc113fd26",
+        "android_client_info": {
+          "package_name": "com.example.famcare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNoDiIEJukChYIOAC-gVeG0tedr9Gm6fQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

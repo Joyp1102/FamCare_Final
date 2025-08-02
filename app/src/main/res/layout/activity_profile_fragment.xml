@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Profile Photo -->
+        <ImageView
+            android:id="@+id/profilePic"
+            android:src="@drawable/ic_profile_avatar"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:background="@drawable/bg_card"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"/>
+
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/userName"
+            android:text="Your Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/userEmail"
+            android:text="your.email@example.com"
+            android:textSize="15sp"
+            android:textColor="#444"
+            android:layout_marginBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Age -->
+        <TextView
+            android:id="@+id/userAge"
+            android:text="Age: -"
+            android:textSize="15sp"
+            android:textColor="#444"
+            android:layout_marginBottom="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:background="#D1C4E9"
+            android:layout_marginBottom="22dp" />
+
+        <!-- Help/Profile Menu Buttons -->
+        <Button
+            android:id="@+id/btnAuthor"
+            android:text="Author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <Button
+            android:id="@+id/btnVersion"
+            android:text="Version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <Button
+            android:id="@+id/btnInstructions"
+            android:text="Instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <!-- Edit Details Button -->
+        <Button
+            android:id="@+id/btnEditDetails"
+            android:text="Edit Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

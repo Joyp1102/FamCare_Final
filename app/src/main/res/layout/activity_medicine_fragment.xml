@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Title -->
+        <TextView
+            android:text="My Medicines"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input: Medicine Name -->
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medicine Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Input: Dose -->
+        <EditText
+            android:id="@+id/doseInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dose"
+            android:inputType="text"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Input: Reason -->
+        <EditText
+            android:id="@+id/reasonInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reason"
+            android:inputType="text"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="14dp" />
+
+        <!-- Buttons: Add, Edit, Delete -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp">
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="Add"
+                android:layout_marginEnd="10dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="Edit"
+                android:layout_marginEnd="10dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="Delete"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        </LinearLayout>
+
+        <!-- List Title -->
+        <TextView
+            android:text="Your Medicine List"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- ListView that fills remaining space! -->
+        <ListView
+            android:id="@+id/medicineList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#D1C4E9"
+            android:dividerHeight="1dp"
+            android:background="@drawable/bg_card"
+            android:padding="4dp"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+</FrameLayout>
